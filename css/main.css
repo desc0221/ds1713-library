@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
+
+/* Set custom variables here */
+:root {
+  --primary-bg-color: rgb(53, 72, 53);
+  --custom-variables:#ffffff;
+  --bg-primary:rgb(62, 74, 62);
+
+  /* Buttons */
+  --button-primary-bg:rgb(33, 75, 33);
+  --button-primary-text: white;
+  --button-secondary-bg:rgb(33, 75, 33);
+  --button-secondary-text: white;
+}
+
+
+
+.navbar-brand {
+  color: #F6F3ED;
+}
+
+/* buttons */
+.btn-primary{
+  background-color: var(--button-primary-bg);
+  border-radius: 5px;
+  color: var(--custom-variables);
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-style: none;
+}
+
+.btn-secondary{
+  background-color: var(--button-primary-bg);
+  border-radius: 5px;
+  color: var(--custom-variables);
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-style: none;
+}
+
+.secondary-button-container{
+  display:flex;
+  justify-content: center;
+}
+
+
+/* fonts */
+body {
+  font-family: "Sarala", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-bg-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Banner */
+#hero {
+  height: 750px;
+  background-color: #E4E6DB;
+  background-image: url(../images/hero-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.hero-content{
+  margin-bottom: 250px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Pick you plan section */
+ .intro{
+text-align: center;
+margin-left: 100px;
+margin-right: 100px;
+margin-bottom: 70px;
+} 
+
+.grid{
+  gap: 40px;
+  margin: 50px 170px 50px 170px;
+} 
+
+/* two column section */
+/* .grid-2{
+  margin-top: 70px;
+  justify-content: center;
+  text-align: center;
+} */
+
+
+h2{
+  text-align: center;
+}
+
+li{
+  list-style: none;
+}
+
+
+.grid-2-text{
+  margin-top: 70px;
+}
+
+/* customer Reviews section */
+
+.grid-3{
+   margin-top: 80px;
+}
+
+.circle-img{
+  border-radius: 100px;
+}
+
+#reviews{
+  color: var(--custom-variables);
+  background-color: var(--primary-bg-color);
+}
+.blockquote-footer{
+  color: var(--custom-variables);
+}
+
+/* Questions */
+
+.questions{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#hero .d-flex {
+  height: 800px;
+}
+.accordion{
+  margin-top: 70px;
+}
+
+
+/* Call to action */
+#cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--custom-variables);
+  height: 600px;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Footer */
+#footer{
+  color: var(--custom-variables);
+  background-color: var(--primary-bg-color);
+}
+
+
+
+#cta .d-flex {
+  height: 400px;
+}
+
+section:not(#hero):not(#cta){
+  padding: 60px 0;
+}
+
+
+@media(min-width: 993px){
+  section:not(#hero):not(#cta){
+    padding: 100px 0;
+  }
+
+  .intro{
+    text-align: center;
+    margin-left: 440px;
+    margin-right: 440px;
+    margin-bottom: 70px;
+    } 
+
+    .questions{
+      margin-left: 300px;
+      margin-right: 300px;
+    }
+    .grid-2{
+      margin-top: 70px;
+    }
+    .img-size{
+      height: 480px;
+    }
+
+    .hero-content{
+      margin-bottom: 250px;
+      margin-left: 380px;
+      margin-right: 380px;
+    }
+}
